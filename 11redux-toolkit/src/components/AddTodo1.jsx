@@ -18,11 +18,9 @@ const AddTodo1 = () => {
 
   const updateTodoHandler = (e) => {
     e.preventDefault();
-
-    console.log("editMode", editMode);
     dispatch(updateTodo(input));
     setInput("");
-    // setEditMode(false);
+    setEditMode(false);
   };
 
   useEffect(() => {
